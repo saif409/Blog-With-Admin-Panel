@@ -1,0 +1,129 @@
+{% include 'sadmin_templates/header.html' %}
+{% load static %}
+
+<div class="row" style="margin-top:40px;">
+    <div class="col-lg-4">
+        <div class="widget style1 navy-bg">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa fa-briefcase fa-5x"></i>
+                </div>
+                <div class="col-8 text-right">
+                    <span> Total User registered</span>
+                    <h2 class="font-bold">{{ total_survey_create }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="widget style1 lazur-bg">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa fa-users fa-5x"></i>
+                </div>
+                <div class="col-8 text-right">
+                    <span>Total Blog Created</span>
+                    <h2 class="font-bold">{{ total_surveyor_create }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="widget style1 yellow-bg">
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa fa-envelope-o fa-5x"></i>
+                </div>
+                <div class="col-8 text-right">
+                    <span> Total Survey Recived </span>
+                    <h2 class="font-bold">{{ total_surveyor_received }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="widget style1 purple-bg">
+                <div class="row">
+                        <div class="col-4">
+                            <i class="fa fa-book fa-5x"></i>
+                        </div>
+                        <div class="col-8 text-right">
+                            <span> Total Question Created</span>
+                            <h2 class="font-bold">{{ total_question_created }}</h2>
+                        </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+ {% if messages %}
+    <div class="messages" style="margin-right:32px;">
+    {% for message in messages %}
+        <div class="alert alert-primary" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+    {% endfor %}
+    </div>
+{% endif %}
+
+<div class="row">
+
+<div class="row container-fluid" style="margin-top:30px;">
+    <div class="col-md-12" >
+        <div class="card">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <h1 class="text-blod" style="padding-left:20px;">All Survey</h1>
+                </div>
+                </div>
+                <div class="container" style="margin-top:30px;">
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush">
+                                <thead class="widget style1 navy-bg">
+                    <tr>
+                        <th scope="col" class="sort" data-sort="name">Sl no</th>
+                        <th scope="col" class="sort" data-sort="name">Blog Title</th>
+                        <th scope="col" class="sort" data-sort="name">Date</th>
+                    </tr>
+                    </thead>
+                                <tbody class="list">
+                        {% for s in survey %}
+                            <tr>
+                                <th scope="row"><span class="name mb-0 text-sm">{{ forloop.counter }}</span></th>
+                               <td><a href="{% url 'survey_view' id=s.id %}"> {{ s.title }}</a></td>
+                                <td>
+                                    <span class="status"> {{ s.survey_date }}</span>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer py-4" style="margin-top:30px;">
+                    <nav aria-label="...">
+                        <div class="col-lg-offset-9">
+                            <div class="pagination">
+                                <span class="step-links">
+                                    {% if survey.has_previous %}
+                                        <a href="?page=1">&laquo; first || </a>
+                                        <a href="?page={{ survey.previous_page_number }}">previous</a>
+                                    {% endif %}
+                                    <span class="current">
+                                        Page {{ survey.number }} of {{ survey.paginator.num_pages }}.
+                                    </span>
+                                    {% if surveyor.has_next %}
+                                        <a href="?page={{ survey.next_page_number }}">next ||</a>
+                                        <a href="?page={{ survey.paginator.num_pages }}">last &raquo;</a>
+                                    {% endif %}
+                                </span>
+                            </div>
+                         </div>
+                    </nav>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
