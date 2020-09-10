@@ -1,0 +1,44 @@
+{% include 'user_templates/header.html' %}
+{% load static %}
+<body>
+
+<div id="colorlib-page"><a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    {% include 'user_templates/sideber.html' %} <!-- END COLORLIB-ASIDE -->
+
+    <div class="container-fluid">
+        <div class="col-lg-9" style="margin-left:340px;">
+            <div class="card" style="margin-bottom:40px;">
+                <div class="card-header" style="background-color:#227687;">
+                    <h4 style="color:#fff;">Blog by :saif mahmud</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row pt-md-4">
+                            <div class="col-md-12">
+                                <div class="blog-entry ftco-animate d-md-flex">
+                                    <a href="" class="img img-2" style="background-image: url({% static 'user_template_static/images/image_1.jpg' %});"></a>
+                                    <div class="text text-2 pl-md-4">
+                                        <h3 class="mb-2"><a href="">{{a.title }}</a>
+                                        </h3>
+                                        <div class="meta-wrap">
+                                            <p class="meta">
+                                                <span><i class="icon-calendar mr-2"></i>date</span>
+                                                <span><a href="single.html"><i class="icon-folder-o mr-2"></i>category</a></span>
+                                                <span><i class="icon-comment2 mr-2"></i>5 Comment</span>
+                                            </p>
+                                        </div>
+                                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto commodi culpa,
+                                            doloribus exercitationem harum illum impedit iste molestiae nemo nesciunt nostrum nulla quasi quod repellendus
+                                            Aliquid animi error optio?</p>
+                                        <p><a href="#" class="btn-custom">Read More <span
+                                                class="ion-ios-arrow-forward"></span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'user_templates/footer.html' %}

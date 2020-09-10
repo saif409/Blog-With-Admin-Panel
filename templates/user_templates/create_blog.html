@@ -1,0 +1,87 @@
+{% include 'user_templates/header.html' %}
+{% load static %}
+<body>
+
+<div id="colorlib-page"><a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    {% include 'user_templates/sideber.html' %} <!-- END COLORLIB-ASIDE -->
+
+    <div class="container-fluid">
+        <div class="col-lg-9" style="margin-left:340px;">
+            <div class="card" style="margin-bottom:40px;">
+                <div class="card-header" style="background-color:#227687;">
+                    <h4 style="color:#fff;">Create Blog</h4>
+                </div>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="card-body">
+
+                    <div class="pl-lg-2">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" style="color:#000;">Title</label>
+                                    <input type="text" name="title" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pl-lg-2">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label" style="color:#000;">Article Header Destails</label>
+                                    <textarea rows="5" class="form-control" name="body"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label class="form-control-label" style="color:#000;">Second Title</label>
+                                        <input type="text" name="second_body_title" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label class="form-control-label" style="color:#000;">Article Header Destails Another</label>
+                                        <textarea rows="5" class="form-control" name="second_body"></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pl-lg-2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" style="color:#000;">Category</label>
+                                    <input type="text" class="form-control" name="category" >
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" style="color:#000;">File</label>
+                                    <input type="file" name="article_pic" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                    <div class="container">
+                        <button class="btn btn-info" type="submit" style="margin-bottom:10px;">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'user_templates/footer.html' %}

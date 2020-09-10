@@ -18,6 +18,10 @@ from.import views
 
 urlpatterns = [
     path('home/', views.admin_home, name='home'),
+    path('', views.getlogin, name="login"),
+    path('logout/', views.getlogout, name="logout"),
+
+
     path('user_register/', views.add_users, name='user_register'),
     path('user_list/<str:filter>/', views.user_list, name="user_list"),
     path('user_view/<int:id>/', views.view_user, name="user_view"),
@@ -26,5 +30,8 @@ urlpatterns = [
     path('delete_user/<int:pid>/', views.user_delete, name="delete_user"),
 
     path('blog_list/', views.all_blog, name='blog_list'),
+    path('add_new_blog/', views.add_new_blog, name='add_blog'),
+
+
     path('contact_list/', views.contacts_list, name='contact_list')
 ]

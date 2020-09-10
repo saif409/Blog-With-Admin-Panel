@@ -10,6 +10,29 @@ from django.core.paginator import Paginator
 
 # Create your views here.
 
+def getlogin(request):
+    if request.user.is_authenticated:
+        return redirect('home')
+    else:
+        if request.method == "POST":
+            username = request.POST.get('user')
+            password = request.POST.get('pass')
+            auth = authenticate(username=username, password=password)
+            if auth is not None:
+                login(request, auth)
+                if request.user.is_superuser:
+                    return redirect('home')
+                else:
+                    return redirect('user-home')
+            else:
+                messages.add_message(request, messages.INFO, 'Username or password missmatch !!')
+    return render(request, 'sadmin_templates/login.html')
+
+
+def getlogout(request):
+    logout(request)
+    return redirect('login')
+
 def admin_home(request):
     total_survey_create = Author.objects.all().count()
     context={
@@ -98,7 +121,7 @@ def update_user(request, username):
                              designation=designation, division=division,status=status)
         messages.success(request, 'User Profile Update Successfully')
         return redirect('user_update',username=username)
-    context={
+    context = {
         's_user': s_user
     }
     return render(request,'sadmin_templates/user/user_update.html',context)
@@ -109,8 +132,18 @@ def user_delete(request, pid):
     messages.warning(request, 'Profile Delete successfully !!')
     return redirect('user_list', filter=None)
 
+
 def all_blog(request):
-    return render(request, 'sadmin_templates/blog/blog_list.html')
+    article_obj = Article.objects.all()
+
+    context={
+        'article':article_obj
+    }
+    return render(request, 'sadmin_templates/blog/blog_list.html', context)
+
+
+def add_new_blog(request):
+    return render(request, 'sadmin_templates/blog/create_blog.html')
 
 def contacts_list(request):
     get_message = Contact.objects.all()
