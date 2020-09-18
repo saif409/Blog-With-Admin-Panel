@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> MLC | Login</title>
+    <title> Blog | Login</title>
 
     <link href="{% static 'admin_template_static/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'admin_template_static/font-awesome/css/font-awesome.css' %}" rel="stylesheet">
@@ -18,6 +18,17 @@
 </head>
 
 <body class="gray-bg">
+
+<div class="main-content" id="panel" style="margin-top:10px;">
+ {% if messages %}
+    <div class="messages" style="margin-right:32px;">
+    {% for message in messages %}
+        <div class="alert alert-primary" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+    {% endfor %}
+    </div>
+{% endif %}
+</div>
+
 
 
     <div class="middle-box text-center loginscreen animated fadeInDown">

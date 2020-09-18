@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-8 text-right">
                     <span> Total User registered</span>
-                    <h2 class="font-bold">{{ total_survey_create }}</h2>
+                    <h2 class="font-bold">{{ author_obj }}</h2>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-8 text-right">
                     <span>Total Blog Created</span>
-                    <h2 class="font-bold">{{ total_surveyor_create }}</h2>
+                    <h2 class="font-bold">{{ blog_obj }}</h2>
                 </div>
             </div>
         </div>
@@ -35,25 +35,13 @@
                     <i class="fa fa-envelope-o fa-5x"></i>
                 </div>
                 <div class="col-8 text-right">
-                    <span> Total Survey Recived </span>
-                    <h2 class="font-bold">{{ total_surveyor_received }}</h2>
+                    <span> Total Complain Recived </span>
+                    <h2 class="font-bold">{{ contact_obj }}</h2>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-lg-4">
-        <div class="widget style1 purple-bg">
-                <div class="row">
-                        <div class="col-4">
-                            <i class="fa fa-book fa-5x"></i>
-                        </div>
-                        <div class="col-8 text-right">
-                            <span> Total Question Created</span>
-                            <h2 class="font-bold">{{ total_question_created }}</h2>
-                        </div>
-                </div>
-        </div>
-    </div>
+
 </div>
 
 
@@ -81,18 +69,18 @@
                                 <thead class="widget style1 navy-bg">
                     <tr>
                         <th scope="col" class="sort" data-sort="name">Sl no</th>
-                        <th scope="col" class="sort" data-sort="name">Blog Title</th>
+                        <th scope="col" class="sort" data-sort="name">Article Title</th>
+                        <th scope="col" class="sort" data-sort="name">Article Author</th>
                         <th scope="col" class="sort" data-sort="name">Date</th>
                     </tr>
                     </thead>
                                 <tbody class="list">
-                        {% for s in survey %}
+                        {% for a in article_obj %}
                             <tr>
                                 <th scope="row"><span class="name mb-0 text-sm">{{ forloop.counter }}</span></th>
-                               <td><a href="{% url 'survey_view' id=s.id %}"> {{ s.title }}</a></td>
-                                <td>
-                                    <span class="status"> {{ s.survey_date }}</span>
-                                </td>
+                                <td><a href="{% url 'blog_view' id=a.id %}"> {{ a.title }}</a></td>
+                                <td><span class="status"> {{ a.article_author }}</span></td>
+                                <td><span class="status"> {{ a.posted_on }}</span></td>
                             </tr>
                         {% endfor %}
                     </tbody>

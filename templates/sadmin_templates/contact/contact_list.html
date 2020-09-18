@@ -9,6 +9,10 @@
     {% endfor %}
     </div>
 {% endif %}
+</div>
+
+
+{% endif %}
 
 <div class="row">
     <div class="row container-fluid" style="margin-top:10px;">
@@ -32,7 +36,7 @@
                 </tr>
                 </thead>
                             <tbody class="list">
-                                {% for c in get_message %}
+                                {% for c in contact_obj %}
 
                                 <tr>
                                     <th scope="row"><span class="name mb-0 text-sm">{{ forloop.counter}}</span></th>
@@ -45,31 +49,13 @@
                                     </td>
                                    <td style="width: 10%">
                                             <div class="btn-group">
-                                                <a href=""><button class="btn btn-primary fa fa-eye"></button></a>
-                                                <a href=""><button class="btn btn-info fa fa-edit ml-1"></button></a>
-                                                <a data-toggle="modal" id="{{s.id}}" data-target="#user_delete{{s.id}}">
-                                                    <button class="btn btn-danger fa fa-trash ml-1"></button></a>
+                                                <a href="{% url 'view_contact' id=c.id %}"><button class="btn btn-primary fa fa-eye"></button></a>
+                                                <a href="{% url 'delete_contact' id=c.id %}"><button class="btn btn-danger fa fa-trash ml-1"></button></a>
+
                                             </div>
                                         </td>
                                 </tr>
-                                    <div class="modal fade" id="user_delete{{s.id}}" tabindex="-1" role="dialog"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Are You Sure To Delete The Following Surveyor?</h5>
-                                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">{{ s.username }}</div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
-                                                <a class="btn btn-primary" href="">Confirm Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 {% endfor %}
                             </tbody>
                         </table>

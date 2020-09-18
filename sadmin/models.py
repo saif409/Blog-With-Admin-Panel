@@ -16,7 +16,8 @@ class Author(models.Model):
     present_address = models.CharField(max_length=200)
     permanent_address = models.CharField(max_length=200)
     designation = models.CharField(max_length=100)
-    status = models.IntegerField(default=0)
+    status = models.IntegerField(default=0, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.username
@@ -29,7 +30,7 @@ class Category(models.Model):
 
 
 class Article(models.Model):
-    article_author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True)
+    article_author = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
     body = models.TextField()
     second_body_title = models.CharField(max_length=100, null=True, blank=True)

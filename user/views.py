@@ -1,7 +1,8 @@
-from django.shortcuts import render,redirect,get_object_or_404
+from django.shortcuts import render,redirect,get_object_or_404,HttpResponseRedirect
 from sadmin.models import Contact,Category,Comment,Article,Author
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
+import pdb;
 
 # Create your views here.
 
@@ -40,9 +41,34 @@ def home(request):
     return render(request, 'user_templates/index.html', context)
 
 
-def user_profile(request, username):
+def user_profile(request):
+    author_obj = get_object_or_404(Author, username=request.session['author_username'])
+    context ={
+        'author_obj': author_obj
+    }
+    return render(request, 'user_templates/profile.html', context)
 
-    return render(request, 'user_templates/profile.html')
+
+def profile_edit(request, user_id):
+    author_obj = get_object_or_404(Author, id=user_id)
+    if request.method == "POST":
+        author_obj.first_name = request.POST.get('first_name')
+        author_obj.last_name = request.POST.get('last_name')
+        author_obj.username = request.POST.get('username')
+        author_obj.email = request.POST.get('email')
+        author_obj.phone = request.POST.get('phone')
+        author_obj.password = request.POST.get('password')
+        author_obj.country = request.POST.get('country')
+        author_obj.division = request.POST.get('division')
+        author_obj.present_address = request.POST.get('present_address')
+        author_obj.permanent_address = request.POST.get('permanent_address')
+        author_obj.designation = request.POST.get('designation')
+        author_obj.save()
+        messages.success(request, 'User Profile Update Successfully')
+    context = {
+        'author_obj': author_obj
+    }
+    return render(request, 'user_templates/update_profile.html', context)
 
 
 def user_contact(request):
@@ -68,7 +94,6 @@ def single_category(request, name):
 
 
 def create_blog(request):
-    category_obj = Category.objects.all()
     if request.method == "POST":
         title = request.POST.get('title')
         body = request.POST.get('body')
@@ -76,20 +101,28 @@ def create_blog(request):
         second_body = request.POST.get('second_body')
         article_pic = request.POST.get('article_pic')
         category = request.POST.get('category')
-
+        article_author = request.POST.get('article_author')
         blog_obj = Article(title=title, body=body, second_body_title=second_body_title,
-                           second_body=second_body, article_pic=article_pic, category=category)
-
+                           second_body=second_body,article_pic=article_pic, category=category,
+                           article_author=article_author)
         blog_obj.save()
         messages.success(request, 'New Article Create Successfully !!')
+    return render(request, 'user_templates/create_blog.html')
+
+
+def blog_remove(request, id):
+    article_obj = Article.objects.get(id=id)
+    article_obj.delete()
+    return HttpResponseRedirect('/')
+
+
+def blog_list(request, user_id):
+    author_obj = get_object_or_404(Author, id=user_id)
+    article_obj = Article.objects.filter(article_author=author_obj.id)
     context = {
-        'category_obj': category_obj
+        'article': article_obj
     }
-    return render(request, 'user_templates/create_blog.html', context)
-
-
-def blog_list(request):
-    return render(request, 'user_templates/blog_list.html')
+    return render(request, 'user_templates/blog_list.html', context)
 
 
 def about(request):
@@ -97,4 +130,12 @@ def about(request):
 
 
 def contact(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        contact_obj = Contact(name=name, email=email, message=message)
+        contact_obj.save()
+        messages.success(request, 'Your Message send to Admin !!')
     return render(request, 'user_templates/contact.html')
+

@@ -33,14 +33,20 @@ def getlogout(request):
     logout(request)
     return redirect('login')
 
-def admin_home(request):
-    total_survey_create = Author.objects.all().count()
-    context={
 
-    }
-    return render(request, 'sadmin_templates/admin_home.html',context)
 def admin_home(request):
-    return render(request, 'sadmin_templates/index.html')
+    author_obj = Author.objects.all().count()
+    blog_obj = Article.objects.all().count()
+    contact_obj = Contact.objects.all().count()
+    article_obj = Article.objects.all()
+    context={
+        'article_obj':article_obj,
+        'author_obj':author_obj,
+        'blog_obj':blog_obj,
+        'contact_obj':contact_obj
+    }
+    return render(request, 'sadmin_templates/index.html', context)
+
 
 def add_users(request):
     if request.method == "POST":
@@ -126,8 +132,8 @@ def update_user(request, username):
     }
     return render(request,'sadmin_templates/user/user_update.html',context)
 
-def user_delete(request, pid):
-    user = get_object_or_404(Author, id=pid)
+def user_delete(request, id):
+    user = get_object_or_404(Author, id=id)
     user.delete()
     messages.warning(request, 'Profile Delete successfully !!')
     return redirect('user_list', filter=None)
@@ -135,19 +141,75 @@ def user_delete(request, pid):
 
 def all_blog(request):
     article_obj = Article.objects.all()
-
-    context={
-        'article':article_obj
+    context = {
+        'article': article_obj
     }
     return render(request, 'sadmin_templates/blog/blog_list.html', context)
 
 
-def add_new_blog(request):
-    return render(request, 'sadmin_templates/blog/create_blog.html')
-
 def contacts_list(request):
-    get_message = Contact.objects.all()
+    contact_obj = Contact.objects.all()
     context={
-        "get_message":get_message
+        "contact_obj":contact_obj
     }
     return render(request, 'sadmin_templates/contact/contact_list.html', context)
+
+
+def view_contact(request, id):
+    contact_obj = get_object_or_404(Contact, id=id)
+    context = {
+        'contact_obj': contact_obj
+    }
+    return render(request, 'sadmin_templates/contact/view_contact.html', context)
+
+def delete_contact(request, id):
+    contact_obj = get_object_or_404(Contact, id=id)
+    contact_obj.delete()
+    return redirect('contact_list')
+
+
+def add_new_blog(request):
+    if request.method == "POST":
+        title = request.POST.get('title')
+        body = request.POST.get('body')
+        second_body_title = request.POST.get('second_body_title')
+        second_body = request.POST.get('second_body')
+        article_pic = request.POST.get('article_pic')
+        category = request.POST.get('category')
+        article_author = request.POST.get('article_author')
+        blog_obj = Article(title=title, body=body, second_body_title=second_body_title,second_body=second_body,
+                           article_pic=article_pic, category=category,article_author=article_author)
+        blog_obj.save()
+        messages.success(request, 'New Article Create Successfully !!')
+    return render(request, 'sadmin_templates/blog/create_blog.html')
+
+
+def view_blog(request, id):
+    article_obj = get_object_or_404(Article, id=id)
+    context={
+       "article_obj":article_obj
+    }
+    return render(request, 'sadmin_templates/blog/view_blog.html', context)
+
+
+def update_blog(request, id):
+    article_obj = get_object_or_404(Article, id=id)
+    if request.method == "POST":
+        article_obj.title = request.POST.get('title')
+        article_obj.body = request.POST.get('body')
+        article_obj.second_body_title = request.POST.get('second_body_title')
+        article_obj.second_body = request.POST.get('second_body')
+        article_obj.article_pic = request.POST.get('article_pic')
+        article_obj.category = request.POST.get('category')
+        article_obj.save()
+    context = {
+       "article_obj":article_obj
+    }
+    return render(request, 'sadmin_templates/blog/update_blog.html', context)
+
+
+def delete_blog(request, id):
+    article_obj = get_object_or_404(Article, id=id)
+    article_obj.delete()
+    return redirect('blog_list')
+

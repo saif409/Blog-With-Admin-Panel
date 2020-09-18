@@ -2,168 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c55c116-2cff-4f52-9b41-d33e18b9c5e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/user_templates/all_blog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user_templates/single_blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user_templates/single_category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0002_surveyor_password.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0003_auto_20200808_0825.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0004_auto_20200808_1029.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0005_auto_20200809_1009.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0006_auto_20200809_1012.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0007_auto_20200809_1014.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/0008_auto_20200814_0809.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sadmin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/congruent_pentagon.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/congruent_pentagon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/header-profile-skin-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/header-profile-skin-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/header-profile-skin-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/header-profile-skin-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/header-profile-skin-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/header-profile-skin-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/header-profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/header-profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/otis_redding.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/otis_redding.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/shattered.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/shattered.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/patterns/triangular.png" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/patterns/triangular.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/font-awesome/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/img/profile_small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/img/profile_small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/inspinia.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/inspinia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/plugins/metisMenu/jquery.metisMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/plugins/metisMenu/jquery.metisMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/plugins/pace/pace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/plugins/pace/pace.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/plugins/slimscroll/jquery.slimscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/plugins/slimscroll/jquery.slimscroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/plugins/slimscroll/jquery.slimscroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/plugins/slimscroll/jquery.slimscroll.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/static/admin_template_static/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/flexslider.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/img/status.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/js/tipsy/tipsy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/css/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/fonts/fontawesome-webfont3e6e.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/fonts/fontawesome-webfont3e6e.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/fonts/fontawesome-webfont3e6e.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/fonts/fontawesome-webfont3e6e.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/fonts/fontawesome-webfont3e6e.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/fonts/fontawesome-webfontd41d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/ads_one.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/color-relationships-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/color-relationships-43x39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/content-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/empty-void-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/featuring-color-green-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/footer-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/ico/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/new-illustrations-late-2015-43x39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/new-swedish-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/newsletter-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/page-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/science-kombat-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/science-kombat-360x466.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/skills-radar-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/skills-radar-43x39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/super-natural-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/super-natural-360x466.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/super-natural-43x39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/super-natural.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/theater-hannover-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/theater-hannover-43x39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/top-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/various-project-263x238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/images/various-project-360x466.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/gmaps.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/jquery.flexslider-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sadmin/static/user_static/js/theia-sticky-sidebar.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sadmin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sadmin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sadmin/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/blog/update_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/blog/update_blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/blog/view_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/blog/view_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/blog-details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_templates/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/blog_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user_templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/sample.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_templates/create_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/create_blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_templates/sideber.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/sideber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_templates/single_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_templates/single_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
@@ -177,53 +37,57 @@
     <session id="-1192241812">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.36" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="3" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="10" />
-          <entry key="html" value="6020" />
-          <entry key="py" value="3695" />
+          <entry key="html" value="8391" />
+          <entry key="py" value="5795" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="10" />
-          <entry key="HTML" value="6020" />
-          <entry key="Python" value="3695" />
+          <entry key="HTML" value="8391" />
+          <entry key="Python" value="5795" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="all_blog" value="1" />
           <entry key="config" value="1" />
-          <entry key="css" value="2" />
-          <entry key="html" value="73" />
+          <entry key="css" value="3" />
+          <entry key="html" value="107" />
           <entry key="js" value="1" />
-          <entry key="py" value="45" />
+          <entry key="py" value="57" />
           <entry key="rnc" value="1" />
           <entry key="sqlite3" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="73" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="107" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="45" />
+          <entry key="Python" value="57" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
@@ -232,106 +96,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user_templates/sideber.html">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-              <folding>
-                <element signature="n#style#0;n#aside#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sadmin/models.py">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="89" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#a#1;n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#a#2;n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1340">
-              <caret line="67" column="71" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="71" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user_templates/all_blog">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#62#0" expanded="true" />
-                <marker date="1599764356004" expanded="true" signature="1204:1261" ph="..." />
-                <marker date="1599764356004" expanded="true" signature="1705:1706" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-              <folding>
-                <element signature="e#629#665#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user_templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user_templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="402">
+              <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -339,13 +116,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sadmin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+            <state relative-caret-position="307">
+              <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1599763832904" expanded="true" signature="1174:1225" ph="..." />
-                <marker date="1599763832904" expanded="true" signature="5393:5464" ph="..." />
+                <marker date="1600409228204" expanded="true" signature="1174:1225" ph="..." />
+                <marker date="1600409228204" expanded="true" signature="5533:5536" ph="..." />
+                <marker date="1600409228204" expanded="true" signature="5881:6113" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sadmin/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" selection-start-line="3" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/update_blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -363,6 +204,11 @@
     <findStrings>
       <find>logo-search header-two clearfix</find>
       <find>footer</find>
+      <find>crea</find>
+      <find>blog_list</find>
+      <find>con</find>
+      <find>view_blog.html</find>
+      <find>user_delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -374,14 +220,11 @@
         <option value="$PROJECT_DIR$/Blog/settings.py" />
         <option value="$PROJECT_DIR$/Blog/urls.py" />
         <option value="$PROJECT_DIR$/templates/sadmin_templates/sideber.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/index.html" />
         <option value="$PROJECT_DIR$/templates/sadmin_templates/footer.html" />
         <option value="$PROJECT_DIR$/templates/sadmin_templates/user/view_user.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html" />
         <option value="$PROJECT_DIR$/sadmin/static/user_static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/templates/user_templates/sample.html" />
         <option value="$PROJECT_DIR$/templates/sadmin_templates/user/register_user.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html" />
         <option value="$PROJECT_DIR$/sadmin/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/user_templates/base.html" />
         <option value="$PROJECT_DIR$/templates/user_templates_main/header.html" />
@@ -390,26 +233,34 @@
         <option value="$PROJECT_DIR$/sadmin/admin.py" />
         <option value="$PROJECT_DIR$/templates/user_templates/header.html" />
         <option value="$PROJECT_DIR$/templates/user_templates/footer.html" />
-        <option value="$PROJECT_DIR$/templates/user_templates/single_blog.html" />
-        <option value="$PROJECT_DIR$/templates/user_templates/blog_list.html" />
-        <option value="$PROJECT_DIR$/templates/user_templates/contact.html" />
         <option value="$PROJECT_DIR$/templates/user_templates/about.html" />
-        <option value="$PROJECT_DIR$/templates/user_templates/profile.html" />
-        <option value="$PROJECT_DIR$/templates/user_templates/create_blog.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/header.html" />
-        <option value="$PROJECT_DIR$/sadmin/urls.py" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html" />
-        <option value="$PROJECT_DIR$/templates/user_templates/sideber.html" />
         <option value="$PROJECT_DIR$/templates/user_templates/login.html" />
         <option value="$PROJECT_DIR$/templates/user_templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html" />
-        <option value="$PROJECT_DIR$/sadmin/views.py" />
-        <option value="$PROJECT_DIR$/sadmin/models.py" />
+        <option value="$PROJECT_DIR$/templates/user_templates/update_profile.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/test.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/user_blog_list.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/sideber.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/profile.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/blog_list.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/single_blog.html" />
+        <option value="$PROJECT_DIR$/templates/user_templates/contact.html" />
         <option value="$PROJECT_DIR$/user/urls.py" />
+        <option value="$PROJECT_DIR$/sadmin/models.py" />
+        <option value="$PROJECT_DIR$/templates/user_templates/create_blog.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/index.html" />
         <option value="$PROJECT_DIR$/user/views.py" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/header.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/blog/view_blog.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html" />
+        <option value="$PROJECT_DIR$/sadmin/views.py" />
+        <option value="$PROJECT_DIR$/sadmin/urls.py" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/blog/update_blog.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html" />
+        <option value="$PROJECT_DIR$/templates/sadmin_templates/login.html" />
       </list>
     </option>
   </component>
@@ -436,6 +287,44 @@
               <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="sadmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="sadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="sadmin_templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="sadmin_templates" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="sadmin_templates" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="sadmin_templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
@@ -521,7 +410,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16071428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2157738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -532,7 +421,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40655738" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.352459" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -547,50 +436,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sadmin/static/another/css/js/tipsy/tipsy.html" />
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/inbox.html" />
-    <entry file="file://$PROJECT_DIR$/Blog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/sideber.html" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="562" column="52" selection-start-line="562" selection-start-column="52" selection-end-line="562" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/view_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="79" column="123" selection-start-line="79" selection-start-column="123" selection-end-line="79" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="82" column="52" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sadmin/static/user_static/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/sadmin/static/user_static/css/js/tipsy/tipsy.html" />
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/blog.html" />
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/register_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -640,36 +485,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/blog_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="144" selection-start-line="17" selection-start-column="144" selection-end-line="17" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/single_blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1940">
-          <caret line="97" column="70" selection-start-line="97" selection-start-column="70" selection-end-line="97" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sadmin/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="50" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="50" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -678,116 +499,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1778">
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sadmin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/create_blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/sideber.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#aside#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="89" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#1;n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#2;n#div#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="67" column="71" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_templates/all_blog">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,22 +509,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sadmin/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/user_blog_list.html" />
+    <entry file="file://$PROJECT_DIR$/sadmin/static/user_template_static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+        <state relative-caret-position="580">
+          <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/sideber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/update_profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="99" column="54" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/blog_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="62" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/single_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sadmin/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/create_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="98" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1820">
+          <caret line="95" selection-start-line="95" selection-end-line="109" selection-end-column="61" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1599763832904" expanded="true" signature="1174:1225" ph="..." />
-            <marker date="1599763832904" expanded="true" signature="5393:5464" ph="..." />
+            <element signature="e#0#83#0" expanded="true" />
+            <marker date="1600371234937" expanded="true" signature="1237:1294" ph="..." />
+            <marker date="1600371234937" expanded="true" signature="2908:2909" ph="..." />
+            <marker date="1600371234937" expanded="true" signature="4178:4288" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/register_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/view_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="117" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sadmin/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
+        <state relative-caret-position="320">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -820,23 +642,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="220">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/view_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="35" column="89" selection-end-line="58" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/contact/view_contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sadmin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
           <folding>
-            <element signature="e#629#665#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1600409228204" expanded="true" signature="1174:1225" ph="..." />
+            <marker date="1600409228204" expanded="true" signature="5533:5536" ph="..." />
+            <marker date="1600409228204" expanded="true" signature="5881:6113" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/views.py">
+    <entry file="file://$PROJECT_DIR$/sadmin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#62#0" expanded="true" />
-            <marker date="1599764356004" expanded="true" signature="1204:1261" ph="..." />
-            <marker date="1599764356004" expanded="true" signature="1705:1706" ph="..." />
-          </folding>
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/create_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/update_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/blog/blog_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/contact/contact_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/user/user_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sadmin_templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

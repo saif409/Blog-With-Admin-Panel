@@ -1,158 +1,58 @@
-
 {% include 'sadmin_templates/header.html' %}
 {% load static %}
-<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
 
+<div class="row container-fluid">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
 
-    <!-- Page content -->
-<div class="container-fluid mt--6" style="margin-top:30px;">
-    <div class="row">
-        <div class="col-xl-12 order-xl-1">
-            <div class="card">
-                <div class="card-header">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <h3 class="mb-0">View Survey</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                <form method="POST">
-                    {% csrf_token %}
-                    <div class="pl-lg-6">
-                        <div class="container">
-                            <div class="row">
-                            <div class="col-lg-12">
-                                <h4>Survey Title </h4></br>
-                                <input disabled type="text" name="title" class="form-control" value="{{ get_survey.title }}">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <br><br>
+                <H1>Article :<strong>{{ article_obj.title }}</strong>  </H1>
+                    <table class="table table-bordered">
+                        <tbody>
+                        <tr>
+                            <th>Article Author</th>
+                            <td><input type="text" class="form-control" value="{{article_obj.article_author}}"/></td>
+                        </tr>
+                        <tr>
+                            <th>Title</th>
+                            <td><input type="text" class="form-control" value="{{ article_obj.title }}" /></td>
+                        </tr>
+                        <tr>
+                            <th>Body</th>
+                            <td>
+                                <textarea rows="10" class="form-control">{{ article_obj.body }}</textarea>
+                            </td>
+                        </tr>
 
-                    <h3>Assigns Surveyor</h3>
-                        <div class="hr-line-dashed"></div>
-                            <div class="container" style="margin-top:30px;">
-                            <div class="table-responsive">
-                                <table class="table align-items-center table-flush">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th scope="col" class="sort" data-sort="name">Sl no</th>
+                        <tr>
+                            <th>Secound Title</th>
+                            <td><input class="form-control" type="text" value="{{ article_obj.second_body_title }}"/>
+                            </td>
+                        </tr>
 
-                                            <th scope="col" class="sort" data-sort="name">Username</th>
+                        <tr>
+                            <th>Body</th>
+                            <td>
+                                <textarea rows="10" class="form-control">{{ article_obj.second_body }}</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Category</th>
+                            <td><input type="text" class="form-control" value="{{ article_obj.category }}"/></td>
+                        </tr>
 
-                                        </tr>
-                                    </thead>
-                                    {% for u in survey_users %}
-                                        <tbody class="list">
-                                        <tr>
-                                            <th scope="row"><span class="name mb-0 text-sm">{{ forloop.counter}}</span></th>
-                                            <td><span class="status">{{ u.user.username }}</span>
-                                            </td>
+                         <tr>
+                            <th>Image</th>
+                            <td><input type="text" class="form-control" value="{{ article_obj.article_pic.url }}"/></td>
+                        </tr>
 
-                                        </tr>
-                                        </tbody>
-                                    {% endfor %}
-                                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModalLabel">Are You Sure You Want To Delete This Surveyor?</h5>
-                                              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">Select "Delete" below if you are ready to delete your selected surveyor.</div>
-                                            <div class="modal-footer">
-                                              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                              <a class="btn btn-primary" href="">Confirm Delete</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </table>
-                            </div>
-                    </div>
+                        </tbody>
 
-
-
-
-                     <h3>Survey Questions</h3>
-                        <div class="hr-line-dashed"></div>
-                            <div class="container" style="margin-top:30px;">
-                            <div class="table-responsive">
-                                <table class="table align-items-center table-flush">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th scope="col" class="sort" data-sort="name">Sl no</th>
-                                            <th scope="col" class="sort" data-sort="name">Question Title</th>
-                                        </tr>
-                                    </thead>
-                                    {% for q in survey_question %}
-                                        <tbody class="list">
-                                        <tr>
-                                            <th scope="row"><span class="name mb-0 text-sm">{{ forloop.counter}}</span></th>
-                                            <td><span class="status">{{ q.question_title }}</span>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    {% endfor %}
-
-                                </table>
-                            </div>
-                        </div>
-
-                    <h3>Assign Area</h3>
-                        <div class="hr-line-dashed"></div>
-                    <div class="container">
-                        <div class="row">
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <h4 class="form-control-label" for="input-area">Survey Area</h4>
-                            <input disabled type="text" name="fname" id="input-area" class="form-control" value="{{ get_survey.area }}" >
-                          </div>
-                        </div>
-
-
-                        </div>
-                        <div class="row">
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <h4 class="form-control-label" for="input-country">Country</h4>
-                            <input disabled type="text" name="fname" id="input-country"  class="form-control" value="{{ get_survey.area.country.country_name }}" >
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <label class="form-control-label" for="input-division">Division</label>
-                            <input disabled type="text" name="lname" id="input-division" class="form-control" value="{{ get_survey.area.division.division_name }}" >
-                          </div>
-                        </div>
-
-                        </div>
-                        <div class="row">
-                             <div class="col-lg-6">
-                          <div class="form-group">
-                            <h4 class="form-control-label" for="input-district">District</h4>
-                            <input disabled type="text" name="lname" id="input-district" class="form-control" value="{{ get_survey.area.district.district_name }}" >
-                          </div>
-                        </div>
-                             <div class="col-lg-6">
-                          <div class="form-group">
-                            <h4 class="form-control-label" for="input-Subdistrict">Sub District</h4>
-                            <input disabled type="text" name="fname" id="input-subdistrict"  class="form-control" value="{{ get_survey.area.subdistrict.subdistrct_name }}" >
-                          </div>
-                        </div>
-
-
-                        </div>
-                    </form>
-                </div>
+                    </table>
             </div>
         </div>
+
     </div>
-</div>
 </div>
 
 

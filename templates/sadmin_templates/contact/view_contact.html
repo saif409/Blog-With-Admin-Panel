@@ -1,0 +1,36 @@
+{% include 'sadmin_templates/header.html' %}
+{% load static %}
+
+<div class="row container-fluid">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+
+                <H1>Article :<strong>{{ article_obj.title }}</strong>  </H1>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>Contact</th>
+                                <td><input type="text" class="form-control" value="{{contact_obj.name }}"/></td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td><input type="text" class="form-control" value="{{ contact_obj.email }}" /></td>
+                            </tr>
+                            <tr>
+                            <th>Message</th>
+                            <td>
+                                <textarea class="form-control">{{ contact_obj.message }}</textarea>
+                            </td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% include 'sadmin_templates/footer.html' %}

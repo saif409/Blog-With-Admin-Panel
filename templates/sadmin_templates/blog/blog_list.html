@@ -1,14 +1,16 @@
 {% include 'sadmin_templates/header.html' %}
 {% load static %}
 
-<div class="main-content" id="panel">
-{% if messages %}
+<div class="main-content" id="panel" style="margin-top:10px;">
+ {% if messages %}
     <div class="messages" style="margin-right:32px;">
-        {% for message in messages %}
-            <div class="alert alert-primary" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
-        {% endfor %}
+    {% for message in messages %}
+        <div class="alert alert-primary" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+    {% endfor %}
     </div>
 {% endif %}
+</div>
+
 
     <div class="row">
 
@@ -39,9 +41,9 @@
                                         <td><a href="">{{ article.article_author }}</a></td>
                                         <td style="width: 10%">
                                             <div class="btn-group">
-                                                <a href=""><button class="btn btn-primary fa fa-eye"></button> </a>
-                                                <a href=" "><button class="btn btn-info fa fa-edit" style="margin-left:3px;"></button></a>
-                                                <a href="" data-toggle="modal" id="{{article.id}}" data-target="#surve_delete{{article.id}}"><button class="btn btn-danger fa fa-trash" style="margin-left:3px;"></button></a>
+                                                <a href="{% url 'blog_view' id=article.id %}"><button class="btn btn-primary fa fa-eye"></button> </a>
+                                                <a href="{% url 'update_blog' id=article.id %}"><button class="btn btn-info fa fa-edit" style="margin-left:3px;"></button></a>
+                                                <a href="{% url 'delete_blog' id=article.id %}"><button class="btn btn-danger fa fa-trash" style="margin-left:3px;"></button></a>
                                             </div>
                                         </td>
 
