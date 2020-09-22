@@ -33,10 +33,9 @@ def user_logout(request):
 
 def home(request):
     article_obj = Article.objects.all()
-    category_obj = Category.objects.all()
+
     context={
         'article_obj': article_obj,
-        'category_obj': category_obj
     }
     return render(request, 'user_templates/index.html', context)
 
