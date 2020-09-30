@@ -35,7 +35,7 @@ class Article(models.Model):
     body = models.TextField()
     second_body_title = models.CharField(max_length=100, null=True, blank=True)
     second_body = models.TextField(null=True, blank=True)
-    article_pic = models.FileField()
+    article_pic = models.ImageField()
     posted_on = models.DateTimeField(auto_now=False, auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True, auto_now_add=False)
     category = models.CharField(max_length=100)

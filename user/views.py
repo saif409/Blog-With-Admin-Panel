@@ -31,18 +31,39 @@ def user_logout(request):
     return redirect('user_login')
 
 
+def register(request):
+    if request.method == "POST":
+        first_name = request.POST.get('first_name')
+        last_name = request.POST.get('last_name')
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        password = request.POST.get('password')
+        profile_picture = request.POST.get('profile_picture')
+        country = request.POST.get('country')
+        division = request.POST.get('division')
+        present_address = request.POST.get('present_address')
+        permanent_address = request.POST.get('permanent_address')
+        designation = request.POST.get('designation')
+        user_obj = Author(first_name=first_name,last_name=last_name,username=username,email=email,
+                          phone=phone,password=password,profile_picture=profile_picture,
+                          country=country,division=division,present_address=present_address,
+                          permanent_address=permanent_address,designation=designation
+                          )
+        user_obj.save()
+    return render(request, 'user_templates/register.html')
+
 def home(request):
     article_obj = Article.objects.all()
-
     context={
         'article_obj': article_obj,
     }
     return render(request, 'user_templates/index.html', context)
 
 
-def user_profile(request):
-    author_obj = get_object_or_404(Author, username=request.session['author_username'])
-    context ={
+def user_profile(request,id):
+    author_obj = get_object_or_404(Author, id=id)
+    context = {
         'author_obj': author_obj
     }
     return render(request, 'user_templates/profile.html', context)
@@ -88,17 +109,13 @@ def single_blog(request, id):
     return render(request, 'user_templates/single_blog.html', context)
 
 
-def single_category(request, name):
-    return render(request, 'user_templates/single_category.html')
-
-
 def create_blog(request):
     if request.method == "POST":
         title = request.POST.get('title')
         body = request.POST.get('body')
         second_body_title = request.POST.get('second_body_title')
         second_body = request.POST.get('second_body')
-        article_pic = request.POST.get('article_pic')
+        article_pic = request.POST.get('image')
         category = request.POST.get('category')
         article_author = request.POST.get('article_author')
         blog_obj = Article(title=title, body=body, second_body_title=second_body_title,
@@ -138,3 +155,9 @@ def contact(request):
         messages.success(request, 'Your Message send to Admin !!')
     return render(request, 'user_templates/contact.html')
 
+
+def comment(request):
+    if request.method == "POST":
+        comment = request.POST.get('comment')
+        comment_obj = Comment(comment=comment)
+        return redirect('single_blog', id=id)
