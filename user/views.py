@@ -61,12 +61,21 @@ def home(request):
     return render(request, 'user_templates/index.html', context)
 
 
+
+
+
 def user_profile(request,id):
     author_obj = get_object_or_404(Author, id=id)
     context = {
         'author_obj': author_obj
     }
     return render(request, 'user_templates/profile.html', context)
+
+
+
+
+
+
 
 
 def profile_edit(request, user_id):

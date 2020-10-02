@@ -10,7 +10,7 @@
 
                 <div class="col-sm-12">
                     <div class="card-header">
-                        <p><i class="fa fa-user"></i> <strong>Profile : {{ author_obj.first_name }}
+                        <p><i class="fa fa-user"></i> <strong>Profile : {{ request.user.username }}
                         {{ author_obj.last_name }}</strong></p>
                     </div>
                     <div class="row">
